@@ -7,8 +7,6 @@ public enum TipoCliente {
     public int valor;
     private String nomeRelatorio;
 
-
-
     public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
         for (TipoCliente tipoCliente : values()) {
             if(tipoCliente.getNomeRelatorio().equals(nomeRelatorio)) {
