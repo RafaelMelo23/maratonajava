@@ -1,14 +1,14 @@
 package javacore.introducaoclasses.Lclassesabstratas.dominio;
 
-public class Gerente extends Funcionario{
+public class Desenvolvedor extends Funcionario {
 
-    public Gerente(String nome, double salario) {
+    public Desenvolvedor(String nome, double salario) {
         super(nome, salario);
     }
 
     @Override
     public String toString() {
-        return "Gerente{" +
+        return "Desenvolvedor{" +
                 "nome='" + nome + '\'' +
                 ", salario=" + salario +
                 '}';
@@ -16,6 +16,6 @@ public class Gerente extends Funcionario{
 
     @Override
     public void calculaBonus() {
-        this.salario = salario + salario * 0.2;
+        this.salario = salario + salario * 0.05;
     }
 }
