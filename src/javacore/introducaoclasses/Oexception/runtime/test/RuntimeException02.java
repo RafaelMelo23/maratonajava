@@ -9,7 +9,6 @@ public class RuntimeException02 {
         System.out.println("Codigo finalizado");
     }
 
-
     /**
      *
      * @param a
