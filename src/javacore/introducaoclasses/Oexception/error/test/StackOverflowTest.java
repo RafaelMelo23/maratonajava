@@ -1,4 +1,4 @@
-package javacore.introducaoclasses.Oexception.test;
+package javacore.introducaoclasses.Oexception.error.test;
 
 public class StackOverflowTest {
 
