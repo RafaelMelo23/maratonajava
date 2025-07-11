@@ -10,25 +10,18 @@ public class RuntimeExceptionTest04 {
         // Nao pode ser a mais generica a frente dos outros, os outros catchs vao se tornar unreachable
         try {
             throw new RuntimeException();
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Dentro do ArrayIndexOutOfBoundsException");
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Dentro do IllegalArgumentException");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Dentro do IllegalArgumentException");
-        } catch (ArithmeticException e) {
-            System.out.println("Dentro do ArithmeticException");
+        } catch (ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException e) {
+            System.out.println("Dentro do ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException");
         } catch (RuntimeException e) {
             System.out.println("Dentro do RuntimeException");
         }
+        // O caso recomendado acima, tratar as ex que se deseja um tratamento especifico, e abaixo, um mais generico pra se garantir em um caso de erro mais generalista
 
         try {
             talvezLanceException();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } catch (FileNotFoundException e) {
+        } catch (SQLException | FileNotFoundException e) {
             e.printStackTrace();
-        }
+        } // sintaxe de colapsar as ex
 
     }
 
