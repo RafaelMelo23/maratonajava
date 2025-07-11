@@ -1,0 +1,39 @@
+package javacore.introducaoclasses.Oexception.runtime.test;
+
+import java.io.FileNotFoundException;
+import java.sql.SQLException;
+
+public class RuntimeExceptionTest04 {
+
+    public static void main(String[] args) {
+
+        // Nao pode ser a mais generica a frente dos outros, os outros catchs vao se tornar unreachable
+        try {
+            throw new RuntimeException();
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Dentro do ArrayIndexOutOfBoundsException");
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Dentro do IllegalArgumentException");
+        } catch (IllegalArgumentException e) {
+            System.out.println("Dentro do IllegalArgumentException");
+        } catch (ArithmeticException e) {
+            System.out.println("Dentro do ArithmeticException");
+        } catch (RuntimeException e) {
+            System.out.println("Dentro do RuntimeException");
+        }
+
+        try {
+            talvezLanceException();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private static void talvezLanceException() throws SQLException, FileNotFoundException {
+
+
+    }
+}
