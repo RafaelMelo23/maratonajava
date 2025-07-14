@@ -14,7 +14,7 @@ public class WrapperTest01 {
 
         Byte byteW = 127;
         Short shortW = 127;
-        Integer intW = 127;
+        Integer intW = 127; //autoboxing
         Long longW = 127L;
         Float floatW = 127.0f;
         Double doubleW = 127.0d;
@@ -22,6 +22,18 @@ public class WrapperTest01 {
         Boolean booleanW = true;
         // relacionados agora ao polimorfismo, nao as limitacoes dos tipos primitivos
 
+        int i = intW; // unboxing
+        Integer intW2 = Integer.parseInt("1");
+        boolean verdadeiro = Boolean.parseBoolean(null);
+        System.out.println(verdadeiro);
+
+        System.out.println(Character.isLetter('A'));
+        System.out.println(Character.isLetter('9'));
+        System.out.println(Character.isLetterOrDigit('!'));
+        System.out.println(Character.isUpperCase('A'));
+        System.out.println(Character.isLowerCase('a'));
+        System.out.println(Character.toUpperCase('a'));
+        System.out.println(Character.toLowerCase('A'));
 
     }
 
