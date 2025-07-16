@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-public class NumberFormatTest01 {
+public class NumberFormatTest02 {
 
     public static void main(String[] args) {
 
@@ -13,18 +13,18 @@ public class NumberFormatTest01 {
 
         NumberFormat[] nfa = new NumberFormat[2];
 
-        nfa[0] = NumberFormat.getInstance(localeBR);
-        nfa[1] = NumberFormat.getInstance(localeJP);
+        nfa[0] = NumberFormat.getCurrencyInstance(localeBR);
+        nfa[1] = NumberFormat.getCurrencyInstance(localeJP);
 
         double valor = 1_000_000.583;
 
-        for (NumberFormat nf : nfa) {
+        for (NumberFormat numberFormat : nfa) {
 
-            System.out.println(nf.format(valor));
+            System.out.println(numberFormat.getMaximumFractionDigits());
+            System.out.println(numberFormat.format(valor));
         }
 
-        // Se tiver um caracter invalido, ele para
-        String valorString = "1000.1383";
+        String valorString = "1,000";
 
         try {
             System.out.println(nfa[0].parse(valorString));
