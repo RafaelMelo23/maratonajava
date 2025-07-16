@@ -1,7 +1,6 @@
 package javacore.Rdatas.test;
 
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class DateFormatTest01 {
@@ -24,6 +23,5 @@ public class DateFormatTest01 {
 
             System.out.println(dateFormat.format(calendar.getTime()));
         }
-
     }
 }
