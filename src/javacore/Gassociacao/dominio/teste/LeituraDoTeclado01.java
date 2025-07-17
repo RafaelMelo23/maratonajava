@@ -1,6 +1,5 @@
 package javacore.Gassociacao.dominio.teste;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class LeituraDoTeclado01 {
