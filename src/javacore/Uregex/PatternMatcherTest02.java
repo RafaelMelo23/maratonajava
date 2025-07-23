@@ -13,8 +13,10 @@ public class PatternMatcherTest02 {
         // \S todos os caracteres excluido os brancos
         // \w a-z A-Z, digitos, _
         // \W tudo o que nao estiver em \w
-        String regex = "\\w";
-        String texto = "ajskasiau12_ ";
+        // [] range
+
+        String regex = "0[xX][0-9a-fA-F]";
+        String texto = "12 0x 0X 0xFFABC 0x109 0x1";
         Pattern pattern = Pattern.compile(regex);
 
         Matcher matcher = pattern.matcher(texto);
