@@ -21,9 +21,15 @@ public class PatternMatcherTest02 {
         // () agrupamento
         // | pipe (ou)
         // $
+        // . 1.3 = 123, 133, 1@3, 1A3
 
-        String regex = "0[xX]([0-9a-fA-F])+(\\s|$)";
-        String texto = "12 0x 0X 0xFFABC 0x10G 0x1";
+
+        String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+(\\.([a-zA-Z])+)+";
+        String texto = "anakin@gmail.com, 123tyranus@gmail.com, #@!palpatine.senate.com, teste@gmail.com, obitwo@mail ";
+
+        System.out.print("Email valido: ");
+        System.out.println("#@!palpatine.senate.com".matches(regex));
+        System.out.println(texto.split(",")[2].trim());
         Pattern pattern = Pattern.compile(regex);
 
         Matcher matcher = pattern.matcher(texto);
