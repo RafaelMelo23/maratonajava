@@ -22,6 +22,7 @@ public class PatternMatcherTest02 {
         // | pipe (ou)
         // $
         // . 1.3 = 123, 133, 1@3, 1A3
+        // ^ utilizado pra encontrar o que se deseja no comeco da string, ex ^\w+ encontra a palavra no comeco da string. se usado com [] vira negacao (tudo que nao for x na string inteira)
 
 
         String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+(\\.([a-zA-Z])+)+";
