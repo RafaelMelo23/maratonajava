@@ -1,4 +1,4 @@
-package javacore.Vio.test;
+package javacore.Wnio.test;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

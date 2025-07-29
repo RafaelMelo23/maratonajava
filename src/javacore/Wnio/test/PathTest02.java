@@ -1,4 +1,4 @@
-package javacore.Vio.test;
+package javacore.Wnio.test;
 
 import java.io.IOException;
 import java.nio.file.Files;
