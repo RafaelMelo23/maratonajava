@@ -18,7 +18,7 @@ public class BasicFileAttributesTest01 {
 
         LocalDateTime dt = LocalDateTime.now().minusDays(10);
 
-        File file = new File("/pasta2/novo.txt");
+        File file = new File("pasta2/novo.txt");
 
         boolean isCreated = file.createNewFile();
         boolean isModified = file.setLastModified(dt.toInstant(ZoneOffset.UTC).toEpochMilli());
