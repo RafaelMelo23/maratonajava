@@ -1,6 +1,7 @@
 package javacore.Xserializacao.test;
 
 import javacore.Xserializacao.dominio.Aluno;
+import javacore.Xserializacao.dominio.Turma;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -14,9 +15,11 @@ public class SerializacaoTest01 {
 
     public static void main(String[] args) {
 
-        // Aluno aluno = new Aluno(1L, "Anakin Skywalker", "123456789");
+         Aluno aluno = new Aluno(1L, "Anakin Skywalker", "123456789");
+         Turma turma = new Turma("Maratona Java DevDojo");
+         aluno.setTurma(turma);
 
-        // serializar(aluno);
+        serializar(aluno);
         deserializar();
     }
 
