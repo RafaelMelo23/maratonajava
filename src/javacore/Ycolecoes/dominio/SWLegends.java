@@ -2,7 +2,7 @@ package javacore.Ycolecoes.dominio;
 
 import java.util.Objects;
 
-public class SWLegends {
+public class SWLegends implements Comparable<SWLegends> {
 
     private Long id;
     private String nome;
@@ -59,5 +59,23 @@ public class SWLegends {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public int compareTo(SWLegends outroLegends) {
+
+        // negativo se o this < outroLegends
+        // return 0 se this == outroLegends
+        // positivo se this > outroLegends
+
+//        if (this.id < outroLegends.getId()) {
+//            return -1;
+//        } else if (this.id.equals(outroLegends.getId())) {
+//            return 0;
+//        } else {
+//            return 1;
+//        }
+
+        return this.id.compareTo(outroLegends.id);
     }
 }
