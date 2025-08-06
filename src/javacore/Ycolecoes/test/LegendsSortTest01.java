@@ -4,8 +4,16 @@ import javacore.Ycolecoes.dominio.SWLegends;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
+class LegendsBooksById implements Comparator<SWLegends> {
+
+    @Override
+    public int compare(SWLegends book1, SWLegends book2) {
+        return book1.getId().compareTo(book2.getId());
+    }
+}
 public class LegendsSortTest01 {
 
     public static void main(String[] args) {
@@ -23,6 +31,13 @@ public class LegendsSortTest01 {
         }
 
         Collections.sort(swLegends);
+        System.out.println("---------");
+
+        for (SWLegends swLegend : swLegends) {
+            System.out.println(swLegend);
+        }
+
+        Collections.sort(swLegends, new LegendsBooksById());
         System.out.println("---------");
 
         for (SWLegends swLegend : swLegends) {

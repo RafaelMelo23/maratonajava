@@ -76,6 +76,6 @@ public class SWLegends implements Comparable<SWLegends> {
 //            return 1;
 //        }
 
-        return this.id.compareTo(outroLegends.id);
+        return this.nome.compareTo(outroLegends.nome);
     }
 }
