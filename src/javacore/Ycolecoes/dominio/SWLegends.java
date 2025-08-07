@@ -34,7 +34,7 @@ public class SWLegends implements Comparable<SWLegends> {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         SWLegends swLegends = (SWLegends) o;
-        return Double.compare(preco, swLegends.preco) == 0 && Objects.equals(id, swLegends.id) && Objects.equals(nome, swLegends.nome);
+        return Objects.equals(id, swLegends.id) && Objects.equals(nome, swLegends.nome);
     }
 
     @Override
