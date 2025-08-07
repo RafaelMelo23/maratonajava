@@ -7,6 +7,7 @@ public class SWLegends implements Comparable<SWLegends> {
     private Long id;
     private String nome;
     private double preco;
+    private int quantidade;
 
     public SWLegends(Long id, String nome, double preco) {
         Objects.requireNonNull(id);
@@ -14,6 +15,19 @@ public class SWLegends implements Comparable<SWLegends> {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public SWLegends(Long id, String nome, double preco, int quantidade) {
+        this(id, nome, preco);
+        this.quantidade = quantidade;
     }
 
     @Override
