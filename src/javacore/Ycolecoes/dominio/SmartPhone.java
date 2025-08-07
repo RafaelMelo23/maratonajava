@@ -10,7 +10,7 @@ public class SmartPhone {
         return "SmartPhone [serialNumber=" + serialNumber + ", marca=" + marca + "]";
     }
 
-    // Reflexiv: x.equals(x) tem que ser true para tudo que for diferente de null
+    // Reflexivo: x.equals(x) tem que ser true para tudo que for diferente de null
     // Simetrico: para x e y diferentes de null, se x.equals(y) == true logo, y.equals(x) == true
     // Transitividade: para x, y, z diferentes de null, se x.equals(y) == true, logo x.equals(z) == true, logo y.equals(z) == true
     // Consistente: x.equals(x) sempre tem que retorna true se x for diferente de null
