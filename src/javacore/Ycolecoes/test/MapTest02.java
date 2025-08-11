@@ -4,6 +4,7 @@ import javacore.Ycolecoes.dominio.Consumidor;
 import javacore.Ycolecoes.dominio.SWLegends;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MapTest02 {
@@ -20,13 +21,22 @@ public class MapTest02 {
         SWLegends legendsBook4 = new SWLegends(9L, "Shatterpoint", 140);
         SWLegends legendsBook5 = new SWLegends(1L, "Rogue Planet", 180);
 
-        Map<Consumidor, SWLegends> consumidorManga = new HashMap<>();
-        consumidorManga.put(consumidor1, legendsBook1);
-        consumidorManga.put(consumidor2, legendsBook2);
+        List<SWLegends> legendsConsumidor1 = List.of(legendsBook1, legendsBook2, legendsBook3);
+        List<SWLegends> legendsConsumidor2 = List.of(legendsBook4, legendsBook5);
 
-        for(Map.Entry<Consumidor, SWLegends> entry : consumidorManga.entrySet()) {
+        Map<Consumidor, List<SWLegends>> consumidorLegendsBooksMap = new HashMap<>();
+        consumidorLegendsBooksMap.put(consumidor1, legendsConsumidor1);
+        consumidorLegendsBooksMap.put(consumidor2, legendsConsumidor2);
 
-            System.out.println(entry.getKey().getNome() + " - " + entry.getValue().getNome());
+        for (Map.Entry<Consumidor, List<SWLegends>> entry : consumidorLegendsBooksMap.entrySet()) {
+
+            System.out.println();
+            System.out.println(entry.getKey().getNome());
+
+            for (SWLegends swLegends : entry.getValue()) {
+                System.out.println(swLegends.getNome());
+            }
         }
+
     }
 }
