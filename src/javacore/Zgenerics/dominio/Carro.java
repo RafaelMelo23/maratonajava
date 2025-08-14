@@ -14,4 +14,8 @@ public class Carro {
     public Carro(String nome) {
         this.nome = nome;
     }
+
+    public String getNome() {
+        return nome;
+    }
 }
