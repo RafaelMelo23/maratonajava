@@ -1,4 +1,4 @@
-package javacore.ZAclassesinternas.test;
+package javacore.ZZAclassesinternas.test;
 
 public class OuterClassTest01 {
 
