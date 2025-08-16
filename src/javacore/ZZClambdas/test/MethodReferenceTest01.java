@@ -6,6 +6,7 @@ import javacore.ZZClambdas.service.SWComparators;
 import java.util.ArrayList;
 import java.util.List;
 
+// Reference to a static method
 public class MethodReferenceTest01 {
 
     public static void main(String[] args) {

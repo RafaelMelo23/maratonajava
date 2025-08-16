@@ -13,4 +13,9 @@ public class SWComparators {
 
         return Integer.compare(s1.getEpisodes(), s2.getEpisodes());
     }
+
+    public int compareByEpisodesNonStatic(StarWars s1, StarWars s2) {
+
+        return Integer.compare(s1.getEpisodes(), s2.getEpisodes());
+    }
 }
