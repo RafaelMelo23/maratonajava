@@ -12,7 +12,7 @@ public class LambdaTest02 {
         List<Integer> integers = map(listaNomes, String::length);
         System.out.println(integers);
 
-        List<String> map = map(listaNomes, (String s) -> s.toUpperCase());
+        List<String> map = map(listaNomes, String::toUpperCase);
         System.out.println(map);
     }
 
