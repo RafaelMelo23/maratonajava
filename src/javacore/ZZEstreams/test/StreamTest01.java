@@ -5,6 +5,7 @@ import javacore.ZZEstreams.dominio.LightNovel;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StreamTest01 {
 
@@ -19,7 +20,13 @@ public class StreamTest01 {
 
     public static void main(String[] args) {
 
-        lightNovelList.sort(Comparator.comparing(LightNovel::getTitle));
-        System.out.println(lightNovelList);
+        List<String> titleList = lightNovelList.stream()
+                .sorted(Comparator.comparing(LightNovel::getTitle))
+                .filter(ln -> ln.getPrice() <= 4)
+                .limit(3)
+                .map(LightNovel::getTitle)
+                .toList();
+
+        System.out.println(titleList);
     }
 }
