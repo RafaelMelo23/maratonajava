@@ -21,6 +21,5 @@ public class StreamTest06 {
         System.out.println("-----------");
         integers.stream().reduce((x, y) -> x > y ? x : y).ifPresent(System.out::println);
         System.out.println(integers.stream().reduce(0, Integer::max));
-
     }
 }
