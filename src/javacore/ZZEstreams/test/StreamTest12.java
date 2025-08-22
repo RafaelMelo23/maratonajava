@@ -7,6 +7,7 @@ import javacore.ZZEstreams.dominio.Promotion;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 
 import static java.util.stream.Collectors.groupingBy;
 import static javacore.ZZEstreams.dominio.Promotion.NORMAL_PRICE;
@@ -25,7 +26,7 @@ public class StreamTest12 {
     public static void main(String[] args) {
 
         Map<Promotion, List<LightNovel>> promotionLightNovel = lightNovelList.stream()
-                .collect(groupingBy(ln -> ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE));
+                .collect(groupingBy(StreamTest12::getNovelPromotionFunction));
 
         System.out.println(promotionLightNovel);
         System.out.println();
@@ -34,8 +35,12 @@ public class StreamTest12 {
 
         Map<Category, Map<Promotion, List<LightNovel>>> collection = lightNovelList.stream()
                 .collect(groupingBy(LightNovel::getCategory,
-                        groupingBy(ln -> ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE)));
+                        groupingBy(StreamTest12::getNovelPromotionFunction)));
 
         System.out.println(collection);
+    }
+
+    private static Promotion getNovelPromotionFunction(LightNovel ln) {
+        return ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE;
     }
 }
