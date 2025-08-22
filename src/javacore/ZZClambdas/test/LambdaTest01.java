@@ -20,4 +20,6 @@ public class LambdaTest01 {
             consumer.accept(e);
         }
     }
+
+
 }
