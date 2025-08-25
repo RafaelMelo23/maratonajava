@@ -61,4 +61,15 @@ public class ThreadTest01 {
         t2.start();
         t3.start();
     }
+
+    // New
+    // Runnable (start), nao significa que a thread esta sendo executada
+    // Waiting/Blocked
+    // Running
+    // Dead
+
+    /*
+        * Uma thread nao pode interferir no estado da outra, se uma esta waiting, foi por decisao dela mesma
+        * uma thread nao pode voltar de waiting/blocked direto para running, apenas para runnable
+     */
 }
