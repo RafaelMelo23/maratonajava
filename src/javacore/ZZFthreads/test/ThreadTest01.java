@@ -38,6 +38,12 @@ class ThreadExampleRunnable implements Runnable {
             if (i % 100 == 0) {
                 System.out.println();
             }
+
+            try { // Uma pouca das garantias que se tem nas threads
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
@@ -46,20 +52,21 @@ public class ThreadTest01 {
 
     public static void main(String[] args) {
 
-//        ThreadExample t = new ThreadExample('a');
-//        ThreadExample t1 = new ThreadExample('b');
-//        ThreadExample t2 = new ThreadExample('c');
-//        ThreadExample t3 = new ThreadExample('d');
+//        ThreadExample t1 = new ThreadExample('a');
+//        ThreadExample t2 = new ThreadExample('b');
+//        ThreadExample t3 = new ThreadExample('c');
+//        ThreadExample t4 = new ThreadExample('d');
 
-        Thread t = new Thread(new ThreadExampleRunnable('a'));
-        Thread t1 = new Thread(new ThreadExampleRunnable('b'));
-        Thread t2 = new Thread(new ThreadExampleRunnable('c'));
-        Thread t3 = new Thread(new ThreadExampleRunnable('d'));
+        Thread t1 = new Thread(new ThreadExampleRunnable('a'), "T1A");
+        Thread t2 = new Thread(new ThreadExampleRunnable('b'), "T2B");
+        Thread t3 = new Thread(new ThreadExampleRunnable('c'), "T3C");
+        Thread t4 = new Thread(new ThreadExampleRunnable('d'), "T4D");
 
-        t.start();
-        t1.start();
-        t2.start();
-        t3.start();
+        t4.setPriority(Thread.MAX_PRIORITY); // <- nao eh garantia de que ela vai ter a prioridade
+        t4.start();
+        t4.start();
+        t4.start();
+        t4.start();
     }
 
     // New
