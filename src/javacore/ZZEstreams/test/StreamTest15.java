@@ -5,6 +5,31 @@ import java.util.stream.Stream;
 
 public class StreamTest15 {
 
+    /* Quando vale a pena usar parallel streams?
+
+    - Benchmark
+    - Unboxing | Boxing
+    - (limit, findFirst) <- deve estar ordenado, sao ruins de usar paralelamente | (findAny é bom)
+    - Custo total da computacao N, P <- geralmente, se o processamento for alto usar parallels e beneficial
+    - Quantidade de dados <- se for muito pequena, geralmente nao vale a pena
+    - Tipos de colecoes <- Algumas colecoes sao boas para parallel, e outras nao. Arraylist por ex, bom, ja linkedlist, nao. Iterate do streams eh ruim, rangeclosed melhor
+    - Tamanho do stream (tamanho definido sao melhores p/ paralelizar)
+    - Processamento merge
+
+     if (tarefa for pequena e nao pode ser dividida) {
+
+        faz sequencialmente
+     } else {
+
+        divide em duas tarefas,
+        chama o metodo recursivamente,
+        espera as tarefas serem completadas
+
+        combina o resultado
+     } - fork join
+
+     */
+
     public static void main(String[] args) {
 
         System.out.println(Runtime.getRuntime().availableProcessors());
