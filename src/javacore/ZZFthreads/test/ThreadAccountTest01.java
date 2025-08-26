@@ -5,7 +5,7 @@ import javacore.ZZFthreads.dominio.Account;
 public class ThreadAccountTest01 implements Runnable {
 
 
-    private Account account = new Account();
+    private final Account account = new Account();
 
     public static void main(String[] args) {
 
@@ -23,17 +23,19 @@ public class ThreadAccountTest01 implements Runnable {
             if (account.getBalance() == 0) {
                 System.out.println("ZEROU");
             }
-        }    
+        }
     }
 
     private void withdrawal(int amount) {
-
-        if (account.getBalance() >= amount) {
-            System.out.println(Thread.currentThread().getName() + " esta indo sacar dinheiro");
-            account.withdrawal(amount);
-            System.out.println(Thread.currentThread().getName() + " completou o saque, valor atual da conta: " + account.getBalance());
-        } else {
-            System.out.println("Sem dinheiro para " + Thread.currentThread().getName() + " efetuar o saque: " + account.getBalance());
+        synchronized (account) {
+            if (account.getBalance() >= amount) {
+                System.out.println(Thread.currentThread().getName() + " esta indo sacar dinheiro");
+                account.withdrawal(amount);
+                System.out.println(Thread.currentThread().getName() + " completou o saque, valor atual da conta: " + account.getBalance());
+            } else {
+                System.out.println("Sem dinheiro para " + Thread.currentThread().getName() + " efetuar o saque: " + account.getBalance());
+            }
         }
     }
+
 }
