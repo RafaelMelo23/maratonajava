@@ -1,6 +1,5 @@
 package javacore.ZZGconcorrencia.test;
 
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 class Worker implements Runnable {
@@ -18,10 +17,8 @@ class Worker implements Runnable {
         lock.lock();
 
         try {
-            if (lock.isHeldByCurrentThread()) {
+            System.out.printf("Thread %s entrou em uma sessao critica%n", name);
 
-                System.out.printf("Thread %s entrou em uma sessao critica%n", name);
-            }
             System.out.printf("%d Threads esperando na fila%n", lock.getQueueLength());
             System.out.printf("Thread %s vai esperar 2s%n", name);
             Thread.sleep(2000);
@@ -35,6 +32,7 @@ class Worker implements Runnable {
 
 
 }
+
 public class ReentrantLockTest01 {
 
     public static void main(String[] args) {
