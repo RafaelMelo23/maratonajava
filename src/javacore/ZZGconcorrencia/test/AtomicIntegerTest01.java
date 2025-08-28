@@ -1,25 +1,35 @@
 package javacore.ZZGconcorrencia.test;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 class Counter {
 
     private int count;
-    private AtomicInteger atomicInteger = new AtomicInteger(0);
+    private AtomicInteger atomicInteger = new AtomicInteger();
+    private Lock lock = new ReentrantLock(true);
 
     public int getCount() {
         return count;
     }
 
     void increment() {
-        count++;
-        atomicInteger.incrementAndGet();
+        lock.lock();
+        try {
+            count++;
+            atomicInteger.incrementAndGet();
+
+        } finally {
+            lock.unlock();
+        }
     }
 
     public AtomicInteger getAtomicInteger() {
         return atomicInteger;
     }
 }
+
 public class AtomicIntegerTest01 {
 
     public static void main(String[] args) throws InterruptedException {
