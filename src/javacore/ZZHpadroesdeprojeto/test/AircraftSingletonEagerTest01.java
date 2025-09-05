@@ -1,5 +1,7 @@
 package javacore.ZZHpadroesdeprojeto.test;
 
+import javacore.ZZHpadroesdeprojeto.dominio.AircraftSingletonEager;
+
 public class AircraftSingletonEagerTest01 {
 
     public static void main(String[] args) {

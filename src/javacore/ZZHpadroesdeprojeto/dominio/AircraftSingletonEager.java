@@ -1,9 +1,10 @@
-package javacore.ZZHpadroesdeprojeto.test;
+package javacore.ZZHpadroesdeprojeto.dominio;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class AircraftSingletonEager {
+
     // Eager initialization
     private static final AircraftSingletonEager INSTANCE = new AircraftSingletonEager("787-900");
     private final Set<String> availableSeats = new HashSet<>();
