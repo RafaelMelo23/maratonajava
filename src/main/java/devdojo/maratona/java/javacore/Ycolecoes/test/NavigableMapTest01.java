@@ -1,4 +1,4 @@
-package javacore.Ycolecoes.test;
+package devdojo.maratona.java.javacore.Ycolecoes.test;
 
 
 import java.util.Map;

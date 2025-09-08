@@ -1,6 +1,6 @@
-package javacore.Zgenerics.service;
+package devdojo.maratona.java.javacore.Zgenerics.service;
 
-import javacore.Zgenerics.dominio.Barco;
+import devdojo.maratona.java.javacore.Zgenerics.dominio.Barco;
 
 import java.util.ArrayList;
 import java.util.List;

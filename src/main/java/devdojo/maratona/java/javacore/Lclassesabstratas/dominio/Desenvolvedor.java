@@ -1,4 +1,4 @@
-package javacore.Lclassesabstratas.dominio;
+package devdojo.maratona.java.javacore.Lclassesabstratas.dominio;
 
 public class Desenvolvedor extends Funcionario {
 

@@ -1,7 +1,6 @@
-package javacore.ZZGconcorrencia.test;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.test;
 
-import javacore.ZZGconcorrencia.service.StoreService;
-import javacore.ZZGconcorrencia.service.StoreServiceDeprecated;
+import devdojo.maratona.java.javacore.ZZGconcorrencia.service.StoreServiceDeprecated;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

@@ -1,4 +1,4 @@
-package javacore.ZZFthreads.test;
+package devdojo.maratona.java.javacore.ZZFthreads.test;
 
 class ThreadExampleRunnable2 implements Runnable {
 

@@ -1,6 +1,6 @@
-package javacore.Csobrecargametodos.Teste;
+package devdojo.maratona.java.javacore.Csobrecargametodos.Teste;
 
-import javacore.Csobrecargametodos.Dominio.Filme;
+import devdojo.maratona.java.javacore.Csobrecargametodos.Dominio.Filme;
 
 public class FilmeTest01 {
     public static void main(String[] args) {

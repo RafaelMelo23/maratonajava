@@ -1,9 +1,7 @@
-package javacore.Zgenerics.test;
+package devdojo.maratona.java.javacore.Zgenerics.test;
 
-import javacore.Zgenerics.dominio.Barco;
-import javacore.Zgenerics.dominio.Carro;
-import javacore.Zgenerics.service.BarcoRentavelService;
-import javacore.Zgenerics.service.CarroRentavelService;
+import devdojo.maratona.java.javacore.Zgenerics.dominio.Barco;
+import devdojo.maratona.java.javacore.Zgenerics.service.BarcoRentavelService;
 
 public class ClasseGenericaTest02 {
 

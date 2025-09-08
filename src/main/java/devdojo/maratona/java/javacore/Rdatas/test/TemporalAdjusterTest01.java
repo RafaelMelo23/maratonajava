@@ -1,11 +1,10 @@
-package javacore.Rdatas.test;
+package devdojo.maratona.java.javacore.Rdatas.test;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAdjuster;
-import java.time.temporal.TemporalAmount;
 
 class ObterProximoDiaUtil implements TemporalAdjuster {
 

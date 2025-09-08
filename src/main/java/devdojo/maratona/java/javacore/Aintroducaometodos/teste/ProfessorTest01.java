@@ -1,6 +1,6 @@
-package javacore.Aintroducaometodos.teste;
+package devdojo.maratona.java.javacore.Aintroducaometodos.teste;
 
-import javacore.Aintroducaometodos.dominio.Professor;
+import devdojo.maratona.java.javacore.Aintroducaometodos.dominio.Professor;
 
 public class ProfessorTest01 {
     public static void main(String[] args) {

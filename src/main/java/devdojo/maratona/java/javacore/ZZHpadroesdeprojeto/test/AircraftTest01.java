@@ -1,6 +1,6 @@
-package javacore.ZZHpadroesdeprojeto.test;
+package devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.test;
 
-import javacore.ZZHpadroesdeprojeto.dominio.Aircraft;
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.Aircraft;
 
 public class AircraftTest01 {
 

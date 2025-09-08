@@ -1,6 +1,6 @@
-package javacore.ZZBcomportamento.interfaces;
+package devdojo.maratona.java.javacore.ZZBcomportamento.interfaces;
 
-import javacore.ZZBcomportamento.dominio.Car;
+import devdojo.maratona.java.javacore.ZZBcomportamento.dominio.Car;
 
 @FunctionalInterface
 public interface CarPredicate {

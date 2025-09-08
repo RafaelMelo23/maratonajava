@@ -1,6 +1,6 @@
-package javacore.ZZAclassesinternas.test;
+package devdojo.maratona.java.javacore.ZZAclassesinternas.test;
 
-import javacore.Zgenerics.dominio.Carro;
+import devdojo.maratona.java.javacore.Zgenerics.dominio.Carro;
 
 import java.util.ArrayList;
 import java.util.Comparator;

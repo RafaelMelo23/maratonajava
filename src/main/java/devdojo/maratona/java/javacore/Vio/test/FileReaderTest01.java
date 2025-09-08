@@ -1,4 +1,4 @@
-package javacore.Vio.test;
+package devdojo.maratona.java.javacore.Vio.test;
 
 import java.io.File;
 import java.io.FileReader;

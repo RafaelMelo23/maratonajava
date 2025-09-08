@@ -1,4 +1,4 @@
-package javacore.Dconstrutores.Dominio;
+package devdojo.maratona.java.javacore.Dconstrutores.Dominio;
 
 public class Filme {
     private String nome;

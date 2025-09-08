@@ -1,4 +1,4 @@
-package javacore.Npolimorfismo.repositorio;
+package devdojo.maratona.java.javacore.Npolimorfismo.repositorio;
 
 public interface Repositorio {
 

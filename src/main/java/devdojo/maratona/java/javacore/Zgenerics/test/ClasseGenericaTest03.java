@@ -1,8 +1,8 @@
-package javacore.Zgenerics.test;
+package devdojo.maratona.java.javacore.Zgenerics.test;
 
-import javacore.Zgenerics.dominio.Barco;
-import javacore.Zgenerics.dominio.Carro;
-import javacore.Zgenerics.service.RentalService;
+import devdojo.maratona.java.javacore.Zgenerics.dominio.Barco;
+import devdojo.maratona.java.javacore.Zgenerics.dominio.Carro;
+import devdojo.maratona.java.javacore.Zgenerics.service.RentalService;
 
 import java.util.ArrayList;
 import java.util.List;

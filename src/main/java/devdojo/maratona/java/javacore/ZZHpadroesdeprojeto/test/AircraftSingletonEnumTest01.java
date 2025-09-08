@@ -1,7 +1,7 @@
-package javacore.ZZHpadroesdeprojeto.test;
+package devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.test;
 
-import javacore.ZZHpadroesdeprojeto.dominio.AircraftSingletonEnum;
-import javacore.ZZHpadroesdeprojeto.dominio.AircraftSingletonLazy;
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.AircraftSingletonEnum;
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.AircraftSingletonLazy;
 
 public class AircraftSingletonEnumTest01 {
 

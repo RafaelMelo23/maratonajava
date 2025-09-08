@@ -1,4 +1,4 @@
-package javacore.Zgenerics.dominio;
+package devdojo.maratona.java.javacore.Zgenerics.dominio;
 
 public class Barco {
 

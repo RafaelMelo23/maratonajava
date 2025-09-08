@@ -1,7 +1,7 @@
-package javacore.Gassociacao.dominio.teste;
+package devdojo.maratona.java.javacore.Gassociacao.dominio.teste;
 
-import javacore.Gassociacao.dominio.dominio.Jogador;
-import javacore.Gassociacao.dominio.dominio.Time;
+import devdojo.maratona.java.javacore.Gassociacao.dominio.dominio.Jogador;
+import devdojo.maratona.java.javacore.Gassociacao.dominio.dominio.Time;
 
 public class JogadorTest02 {
     public static void main(String[] args) {

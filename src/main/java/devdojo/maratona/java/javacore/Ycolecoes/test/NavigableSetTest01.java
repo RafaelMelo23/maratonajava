@@ -1,7 +1,7 @@
-package javacore.Ycolecoes.test;
+package devdojo.maratona.java.javacore.Ycolecoes.test;
 
-import javacore.Ycolecoes.dominio.SWLegends;
-import javacore.Ycolecoes.dominio.SmartPhone;
+import devdojo.maratona.java.javacore.Ycolecoes.dominio.SWLegends;
+import devdojo.maratona.java.javacore.Ycolecoes.dominio.SmartPhone;
 
 import java.util.Comparator;
 import java.util.NavigableSet;

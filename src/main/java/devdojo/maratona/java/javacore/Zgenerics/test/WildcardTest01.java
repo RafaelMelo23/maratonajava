@@ -1,4 +1,4 @@
-package javacore.Zgenerics.test;
+package devdojo.maratona.java.javacore.Zgenerics.test;
 
 abstract class Animal {
 

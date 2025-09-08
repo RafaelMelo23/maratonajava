@@ -1,4 +1,4 @@
-package javacore.Csobrecargametodos.Dominio;
+package devdojo.maratona.java.javacore.Csobrecargametodos.Dominio;
 
 public class Filme {
     private String nome;

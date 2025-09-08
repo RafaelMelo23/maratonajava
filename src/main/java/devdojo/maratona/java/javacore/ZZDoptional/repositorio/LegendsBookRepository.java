@@ -1,6 +1,6 @@
-package javacore.ZZDoptional.repositorio;
+package devdojo.maratona.java.javacore.ZZDoptional.repositorio;
 
-import javacore.ZZDoptional.dominio.LegendsBook;
+import devdojo.maratona.java.javacore.ZZDoptional.dominio.LegendsBook;
 
 import java.util.List;
 import java.util.Optional;

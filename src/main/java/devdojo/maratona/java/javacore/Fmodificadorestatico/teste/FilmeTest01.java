@@ -1,7 +1,7 @@
-package javacore.Fmodificadorestatico.teste;
+package devdojo.maratona.java.javacore.Fmodificadorestatico.teste;
 
 
-import javacore.Fmodificadorestatico.dominio.Filme;
+import devdojo.maratona.java.javacore.Fmodificadorestatico.dominio.Filme;
 
 public class FilmeTest01 {
 

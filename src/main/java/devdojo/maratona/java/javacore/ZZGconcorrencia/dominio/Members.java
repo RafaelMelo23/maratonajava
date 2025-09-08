@@ -1,4 +1,4 @@
-package javacore.ZZGconcorrencia.dominio;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.dominio;
 
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;

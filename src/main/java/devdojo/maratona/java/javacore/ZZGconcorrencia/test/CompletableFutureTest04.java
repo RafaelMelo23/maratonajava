@@ -1,11 +1,10 @@
-package javacore.ZZGconcorrencia.test;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.test;
 
-import javacore.ZZGconcorrencia.dominio.Quote;
-import javacore.ZZGconcorrencia.service.StoreServiceWithDiscount;
+import devdojo.maratona.java.javacore.ZZGconcorrencia.dominio.Quote;
+import devdojo.maratona.java.javacore.ZZGconcorrencia.service.StoreServiceWithDiscount;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.stream.Collectors;
 
 public class CompletableFutureTest04 {
 

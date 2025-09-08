@@ -1,6 +1,6 @@
-package javacore.ZZFthreads.test;
+package devdojo.maratona.java.javacore.ZZFthreads.test;
 
-import javacore.ZZFthreads.dominio.Account;
+import devdojo.maratona.java.javacore.ZZFthreads.dominio.Account;
 
 public class ThreadAccountTest01 implements Runnable {
 

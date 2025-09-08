@@ -1,8 +1,8 @@
-package javacore.Minterfaces.test;
+package devdojo.maratona.java.javacore.Minterfaces.test;
 
-import javacore.Minterfaces.dominio.DataLoader;
-import javacore.Minterfaces.dominio.DatabaseLoader;
-import javacore.Minterfaces.dominio.FileLoader;
+import devdojo.maratona.java.javacore.Minterfaces.dominio.DataLoader;
+import devdojo.maratona.java.javacore.Minterfaces.dominio.DatabaseLoader;
+import devdojo.maratona.java.javacore.Minterfaces.dominio.FileLoader;
 
 public class DataLoaderTest01 {
 

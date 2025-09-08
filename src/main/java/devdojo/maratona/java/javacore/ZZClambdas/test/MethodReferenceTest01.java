@@ -1,7 +1,7 @@
-package javacore.ZZClambdas.test;
+package devdojo.maratona.java.javacore.ZZClambdas.test;
 
-import javacore.ZZClambdas.dominio.StarWars;
-import javacore.ZZClambdas.service.SWComparators;
+import devdojo.maratona.java.javacore.ZZClambdas.dominio.StarWars;
+import devdojo.maratona.java.javacore.ZZClambdas.service.SWComparators;
 
 import java.util.ArrayList;
 import java.util.List;

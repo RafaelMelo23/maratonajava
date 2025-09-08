@@ -1,8 +1,8 @@
-package javacore.ZZHpadroesdeprojeto.test;
+package devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.test;
 
-import javacore.ZZHpadroesdeprojeto.dominio.Country;
-import javacore.ZZHpadroesdeprojeto.dominio.Currency;
-import javacore.ZZHpadroesdeprojeto.dominio.CurrencyFactory;
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.Country;
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.Currency;
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.CurrencyFactory;
 
 public class CurrencyFactoryTest01 {
 

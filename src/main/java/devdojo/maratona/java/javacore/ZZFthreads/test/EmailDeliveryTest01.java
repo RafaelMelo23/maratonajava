@@ -1,7 +1,7 @@
-package javacore.ZZFthreads.test;
+package devdojo.maratona.java.javacore.ZZFthreads.test;
 
-import javacore.ZZFthreads.dominio.Members;
-import javacore.ZZFthreads.service.EmailDeliveryService;
+import devdojo.maratona.java.javacore.ZZFthreads.dominio.Members;
+import devdojo.maratona.java.javacore.ZZFthreads.service.EmailDeliveryService;
 
 import javax.swing.*;
 

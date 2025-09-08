@@ -1,7 +1,7 @@
-package javacore.Npolimorfismo.servico;
+package devdojo.maratona.java.javacore.Npolimorfismo.servico;
 
-import javacore.Npolimorfismo.dominio.Produto;
-import javacore.Npolimorfismo.dominio.Tomate;
+import devdojo.maratona.java.javacore.Npolimorfismo.dominio.Produto;
+import devdojo.maratona.java.javacore.Npolimorfismo.dominio.Tomate;
 
 public class CalculadoraImposto {
 

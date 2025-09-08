@@ -1,4 +1,4 @@
-package javacore.ZZGconcorrencia.test;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.test;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

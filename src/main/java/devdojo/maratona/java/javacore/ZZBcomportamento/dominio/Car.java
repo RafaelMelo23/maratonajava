@@ -1,4 +1,4 @@
-package javacore.ZZBcomportamento.dominio;
+package devdojo.maratona.java.javacore.ZZBcomportamento.dominio;
 
 public class Car {
 

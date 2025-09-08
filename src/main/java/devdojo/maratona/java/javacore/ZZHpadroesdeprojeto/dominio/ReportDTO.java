@@ -1,4 +1,4 @@
-package javacore.ZZHpadroesdeprojeto.dominio;
+package devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio;
 
 public class ReportDTO {
 

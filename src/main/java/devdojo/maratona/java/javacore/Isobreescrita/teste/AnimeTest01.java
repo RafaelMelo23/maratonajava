@@ -1,6 +1,6 @@
-package javacore.Isobreescrita.teste;
+package devdojo.maratona.java.javacore.Isobreescrita.teste;
 
-import javacore.Isobreescrita.dominio.Anime;
+import devdojo.maratona.java.javacore.Isobreescrita.dominio.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {

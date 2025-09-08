@@ -1,7 +1,7 @@
-package javacore.ZZGconcorrencia.service;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.service;
 
-import javacore.ZZGconcorrencia.dominio.Discount;
-import javacore.ZZGconcorrencia.dominio.Quote;
+import devdojo.maratona.java.javacore.ZZGconcorrencia.dominio.Discount;
+import devdojo.maratona.java.javacore.ZZGconcorrencia.dominio.Quote;
 
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;

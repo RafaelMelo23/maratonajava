@@ -1,7 +1,6 @@
-package javacore.ZZBcomportamento.test;
+package devdojo.maratona.java.javacore.ZZBcomportamento.test;
 
-import javacore.ZZBcomportamento.dominio.Car;
-import javacore.ZZBcomportamento.interfaces.CarPredicate;
+import devdojo.maratona.java.javacore.ZZBcomportamento.dominio.Car;
 
 import java.util.ArrayList;
 import java.util.List;

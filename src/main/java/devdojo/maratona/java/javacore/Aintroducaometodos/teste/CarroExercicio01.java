@@ -1,6 +1,7 @@
-package javacore.Aintroducaometodos.teste;
+package devdojo.maratona.java.javacore.Aintroducaometodos.teste;
 
-import javacore.Aintroducaometodos.dominio.Carro;
+
+import devdojo.maratona.java.javacore.Aintroducaometodos.dominio.Carro;
 
 public class CarroExercicio01 {
     public static void main(String[] args) {

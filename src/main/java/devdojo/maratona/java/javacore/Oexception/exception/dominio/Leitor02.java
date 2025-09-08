@@ -1,4 +1,4 @@
-package javacore.Oexception.exception.dominio;
+package devdojo.maratona.java.javacore.Oexception.exception.dominio;
 
 import java.io.Closeable;
 import java.io.IOException;

@@ -1,6 +1,6 @@
-package javacore.Oexception.runtime.test;
+package devdojo.maratona.java.javacore.Oexception.runtime.test;
 
-import javacore.Oexception.exception.dominio.LoginInvalidoException;
+import devdojo.maratona.java.javacore.Oexception.exception.dominio.LoginInvalidoException;
 
 import java.util.Scanner;
 

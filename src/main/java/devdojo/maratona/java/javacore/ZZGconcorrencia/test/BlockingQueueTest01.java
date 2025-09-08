@@ -1,4 +1,4 @@
-package javacore.ZZGconcorrencia.test;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.test;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

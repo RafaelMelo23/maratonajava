@@ -1,7 +1,6 @@
-package javacore.ZZFthreads.test;
+package devdojo.maratona.java.javacore.ZZFthreads.test;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 class ThreadSafeNames {

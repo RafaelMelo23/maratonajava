@@ -1,6 +1,6 @@
-package javacore.ZZFthreads.service;
+package devdojo.maratona.java.javacore.ZZFthreads.service;
 
-import javacore.ZZFthreads.dominio.Members;
+import devdojo.maratona.java.javacore.ZZFthreads.dominio.Members;
 
 public class EmailDeliveryService implements Runnable {
 

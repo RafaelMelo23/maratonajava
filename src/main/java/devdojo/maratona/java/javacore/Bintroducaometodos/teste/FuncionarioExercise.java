@@ -1,6 +1,6 @@
-package javacore.Bintroducaometodos.teste;
+package devdojo.maratona.java.javacore.Bintroducaometodos.teste;
 
-import javacore.Bintroducaometodos.dominio.Funcionario;
+import devdojo.maratona.java.javacore.Bintroducaometodos.dominio.Funcionario;
 
 public class FuncionarioExercise {
     public static void main(String[] args) {

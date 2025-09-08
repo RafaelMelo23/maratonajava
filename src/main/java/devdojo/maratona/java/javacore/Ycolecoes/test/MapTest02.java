@@ -1,7 +1,7 @@
-package javacore.Ycolecoes.test;
+package devdojo.maratona.java.javacore.Ycolecoes.test;
 
-import javacore.Ycolecoes.dominio.Consumidor;
-import javacore.Ycolecoes.dominio.SWLegends;
+import devdojo.maratona.java.javacore.Ycolecoes.dominio.Consumidor;
+import devdojo.maratona.java.javacore.Ycolecoes.dominio.SWLegends;
 
 import java.util.HashMap;
 import java.util.List;

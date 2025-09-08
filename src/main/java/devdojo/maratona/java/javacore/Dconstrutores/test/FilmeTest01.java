@@ -1,6 +1,6 @@
-package javacore.Dconstrutores.test;
+package devdojo.maratona.java.javacore.Dconstrutores.test;
 
-import javacore.Dconstrutores.Dominio.Filme;
+import devdojo.maratona.java.javacore.Dconstrutores.Dominio.Filme;
 
 public class FilmeTest01 {
     public static void main(String[] args) {

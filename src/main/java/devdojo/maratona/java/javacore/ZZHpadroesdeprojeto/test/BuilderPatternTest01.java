@@ -1,6 +1,6 @@
-package javacore.ZZHpadroesdeprojeto.test;
+package devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.test;
 
-import javacore.ZZHpadroesdeprojeto.dominio.Person;
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.Person;
 
 public class BuilderPatternTest01 {
 

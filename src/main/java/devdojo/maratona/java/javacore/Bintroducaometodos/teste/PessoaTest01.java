@@ -1,6 +1,6 @@
-package javacore.Bintroducaometodos.teste;
+package devdojo.maratona.java.javacore.Bintroducaometodos.teste;
 
-import javacore.Bintroducaometodos.dominio.Pessoa;
+import devdojo.maratona.java.javacore.Bintroducaometodos.dominio.Pessoa;
 
 public class PessoaTest01 {
     public static void main(String[] args) {

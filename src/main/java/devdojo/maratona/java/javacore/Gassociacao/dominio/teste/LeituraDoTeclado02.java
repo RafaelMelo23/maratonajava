@@ -1,4 +1,4 @@
-package javacore.Gassociacao.dominio.teste;
+package devdojo.maratona.java.javacore.Gassociacao.dominio.teste;
 
 import java.util.Scanner;
 

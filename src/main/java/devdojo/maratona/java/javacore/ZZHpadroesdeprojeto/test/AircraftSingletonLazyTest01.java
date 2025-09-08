@@ -1,6 +1,6 @@
-package javacore.ZZHpadroesdeprojeto.test;
+package devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.test;
 
-import javacore.ZZHpadroesdeprojeto.dominio.AircraftSingletonLazy;
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.AircraftSingletonLazy;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

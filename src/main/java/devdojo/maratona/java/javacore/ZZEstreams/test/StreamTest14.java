@@ -1,15 +1,15 @@
-package javacore.ZZEstreams.test;
+package devdojo.maratona.java.javacore.ZZEstreams.test;
 
-import javacore.ZZEstreams.dominio.Category;
-import javacore.ZZEstreams.dominio.LightNovel;
-import javacore.ZZEstreams.dominio.Promotion;
+import devdojo.maratona.java.javacore.ZZEstreams.dominio.Category;
+import devdojo.maratona.java.javacore.ZZEstreams.dominio.LightNovel;
+import devdojo.maratona.java.javacore.ZZEstreams.dominio.Promotion;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
-import static javacore.ZZEstreams.dominio.Promotion.NORMAL_PRICE;
-import static javacore.ZZEstreams.dominio.Promotion.UNDER_PROMOTION;
+import static devdojo.maratona.java.javacore.ZZEstreams.dominio.Promotion.NORMAL_PRICE;
+import static devdojo.maratona.java.javacore.ZZEstreams.dominio.Promotion.UNDER_PROMOTION;
 
 public class StreamTest14 {
 

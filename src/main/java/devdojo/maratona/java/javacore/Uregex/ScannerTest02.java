@@ -1,4 +1,4 @@
-package javacore.Uregex;
+package devdojo.maratona.java.javacore.Uregex;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package javacore.ZZHpadroesdeprojeto.dominio;
+package devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package javacore.Ycolecoes.dominio;
+package devdojo.maratona.java.javacore.Ycolecoes.dominio;
 
 import java.util.Objects;
 

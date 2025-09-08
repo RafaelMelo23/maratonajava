@@ -1,4 +1,4 @@
-package javacore.ZZFthreads.dominio;
+package devdojo.maratona.java.javacore.ZZFthreads.dominio;
 
 public class Account {
 

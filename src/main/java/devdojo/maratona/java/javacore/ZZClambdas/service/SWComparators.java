@@ -1,6 +1,6 @@
-package javacore.ZZClambdas.service;
+package devdojo.maratona.java.javacore.ZZClambdas.service;
 
-import javacore.ZZClambdas.dominio.StarWars;
+import devdojo.maratona.java.javacore.ZZClambdas.dominio.StarWars;
 
 public class SWComparators {
 

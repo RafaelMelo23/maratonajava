@@ -1,4 +1,4 @@
-package javacore.Aintroducaometodos.dominio;
+package devdojo.maratona.java.javacore.Aintroducaometodos.dominio;
 
 public class Estudante {
         public String nome ="Zoro";

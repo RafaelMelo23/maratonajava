@@ -1,4 +1,4 @@
-package javacore.Isobreescrita.dominio;
+package devdojo.maratona.java.javacore.Isobreescrita.dominio;
 
 public class Anime {
     private String nome;

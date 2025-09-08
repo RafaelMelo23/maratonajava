@@ -1,4 +1,4 @@
-package javacore.Sformatacao.test;
+package devdojo.maratona.java.javacore.Sformatacao.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;

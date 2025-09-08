@@ -1,4 +1,4 @@
-package javacore.ZZEstreams.dominio;
+package devdojo.maratona.java.javacore.ZZEstreams.dominio;
 
 public class LightNovel {
 

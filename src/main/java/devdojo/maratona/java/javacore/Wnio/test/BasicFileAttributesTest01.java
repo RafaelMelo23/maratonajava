@@ -1,4 +1,4 @@
-package javacore.Wnio.test;
+package devdojo.maratona.java.javacore.Wnio.test;
 
 import java.io.File;
 import java.io.IOException;

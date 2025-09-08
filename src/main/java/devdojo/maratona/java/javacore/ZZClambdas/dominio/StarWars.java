@@ -1,4 +1,4 @@
-package javacore.ZZClambdas.dominio;
+package devdojo.maratona.java.javacore.ZZClambdas.dominio;
 
 public class StarWars {
 

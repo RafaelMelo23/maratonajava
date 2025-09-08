@@ -1,9 +1,8 @@
-package javacore.Xserializacao.test;
+package devdojo.maratona.java.javacore.Xserializacao.test;
 
-import javacore.Xserializacao.dominio.Aluno;
-import javacore.Xserializacao.dominio.Turma;
+import devdojo.maratona.java.javacore.Xserializacao.dominio.Aluno;
+import devdojo.maratona.java.javacore.Xserializacao.dominio.Turma;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

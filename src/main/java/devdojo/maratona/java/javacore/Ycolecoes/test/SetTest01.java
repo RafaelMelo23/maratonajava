@@ -1,9 +1,8 @@
-package javacore.Ycolecoes.test;
+package devdojo.maratona.java.javacore.Ycolecoes.test;
 
-import javacore.Ycolecoes.dominio.SWLegends;
+import devdojo.maratona.java.javacore.Ycolecoes.dominio.SWLegends;
 
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class SetTest01 {

@@ -1,4 +1,4 @@
-package javacore.ZZGconcorrencia.service;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.service;
 
 import java.util.concurrent.*;
 

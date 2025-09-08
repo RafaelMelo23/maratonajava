@@ -1,4 +1,4 @@
-package javacore.ZZGconcorrencia.dominio;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.dominio;
 
 // storeName:price:discountCode
 public class Discount {

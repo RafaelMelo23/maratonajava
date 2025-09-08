@@ -1,4 +1,4 @@
-package javacore.Qstring.test;
+package devdojo.maratona.java.javacore.Qstring.test;
 
 public class StringTest02 {
 

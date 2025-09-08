@@ -1,5 +1,6 @@
-package javacore.ZZHpadroesdeprojeto.test;
+package devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.test;
 
+import devdojo.maratona.java.javacore.ZZHpadroesdeprojeto.dominio.*;
 import javacore.ZZHpadroesdeprojeto.dominio.*;
 
 public class DataTransferObjectTest01 {

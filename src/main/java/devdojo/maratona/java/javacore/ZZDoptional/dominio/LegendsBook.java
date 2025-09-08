@@ -1,4 +1,4 @@
-package javacore.ZZDoptional.dominio;
+package devdojo.maratona.java.javacore.ZZDoptional.dominio;
 
 public class LegendsBook {
 

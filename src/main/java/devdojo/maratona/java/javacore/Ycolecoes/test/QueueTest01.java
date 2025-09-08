@@ -1,6 +1,6 @@
-package javacore.Ycolecoes.test;
+package devdojo.maratona.java.javacore.Ycolecoes.test;
 
-import javacore.Ycolecoes.dominio.SWLegends;
+import devdojo.maratona.java.javacore.Ycolecoes.dominio.SWLegends;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

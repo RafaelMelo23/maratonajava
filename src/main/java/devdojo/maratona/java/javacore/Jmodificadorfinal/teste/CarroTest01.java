@@ -1,7 +1,7 @@
-package javacore.Jmodificadorfinal.teste;
+package devdojo.maratona.java.javacore.Jmodificadorfinal.teste;
 
-import javacore.Jmodificadorfinal.dominio.Carro;
-import javacore.Jmodificadorfinal.dominio.Subaru;
+import devdojo.maratona.java.javacore.Jmodificadorfinal.dominio.Carro;
+import devdojo.maratona.java.javacore.Jmodificadorfinal.dominio.Subaru;
 
 public class CarroTest01 {
     public static void main(String[] args) {

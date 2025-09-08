@@ -1,4 +1,4 @@
-package javacore.Zgenerics.service;
+package devdojo.maratona.java.javacore.Zgenerics.service;
 
 import java.util.List;
 

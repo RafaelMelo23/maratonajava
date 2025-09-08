@@ -1,6 +1,6 @@
-package javacore.Zgenerics.test;
+package devdojo.maratona.java.javacore.Zgenerics.test;
 
-import javacore.Ycolecoes.dominio.Consumidor;
+import devdojo.maratona.java.javacore.Ycolecoes.dominio.Consumidor;
 
 import java.util.ArrayList;
 import java.util.List;

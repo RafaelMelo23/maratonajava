@@ -1,7 +1,7 @@
-package javacore.ZZGconcorrencia.service;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.service;
 
 
-import javacore.ZZGconcorrencia.dominio.Members;
+import devdojo.maratona.java.javacore.ZZGconcorrencia.dominio.Members;
 
 public class EmailDeliveryService implements Runnable {
 

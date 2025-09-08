@@ -1,9 +1,9 @@
-package javacore.ZZGconcorrencia.test;
+package devdojo.maratona.java.javacore.ZZGconcorrencia.test;
 
 
 
-import javacore.ZZGconcorrencia.dominio.Members;
-import javacore.ZZGconcorrencia.service.EmailDeliveryService;
+import devdojo.maratona.java.javacore.ZZGconcorrencia.dominio.Members;
+import devdojo.maratona.java.javacore.ZZGconcorrencia.service.EmailDeliveryService;
 
 import javax.swing.*;
 

@@ -1,4 +1,4 @@
-package javacore.ZZEstreams.test;
+package devdojo.maratona.java.javacore.ZZEstreams.test;
 
 import java.util.Arrays;
 import java.util.List;

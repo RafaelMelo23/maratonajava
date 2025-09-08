@@ -1,6 +1,6 @@
-package javacore.Npolimorfismo.servico;
+package devdojo.maratona.java.javacore.Npolimorfismo.servico;
 
-import javacore.Npolimorfismo.repositorio.Repositorio;
+import devdojo.maratona.java.javacore.Npolimorfismo.repositorio.Repositorio;
 
 public class RepositorioMemoria implements Repositorio {
 

@@ -1,4 +1,4 @@
-package javacore.Xserializacao.dominio;
+package devdojo.maratona.java.javacore.Xserializacao.dominio;
 
 import java.io.*;
 

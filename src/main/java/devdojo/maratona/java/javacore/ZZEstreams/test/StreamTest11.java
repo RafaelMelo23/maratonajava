@@ -1,7 +1,7 @@
-package javacore.ZZEstreams.test;
+package devdojo.maratona.java.javacore.ZZEstreams.test;
 
-import javacore.ZZEstreams.dominio.Category;
-import javacore.ZZEstreams.dominio.LightNovel;
+import devdojo.maratona.java.javacore.ZZEstreams.dominio.Category;
+import devdojo.maratona.java.javacore.ZZEstreams.dominio.LightNovel;
 
 import java.util.ArrayList;
 import java.util.HashMap;

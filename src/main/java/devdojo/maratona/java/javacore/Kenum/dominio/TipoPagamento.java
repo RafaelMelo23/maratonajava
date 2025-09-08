@@ -1,4 +1,4 @@
-package javacore.Kenum.dominio;
+package devdojo.maratona.java.javacore.Kenum.dominio;
 
 public enum TipoPagamento {
     DEBITO {
