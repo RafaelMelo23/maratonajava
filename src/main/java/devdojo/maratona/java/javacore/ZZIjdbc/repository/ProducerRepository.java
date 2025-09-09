@@ -18,7 +18,22 @@ public class ProducerRepository {
 
             Statement stmt = conn.createStatement();
             int rowsAffected = stmt.executeUpdate(sql);
-            log.info("Rows affected: " + rowsAffected);
+            log.info("Inserted producer: {}, Rows affected: {} ", producer.getName(), rowsAffected);
+            stmt.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void delete(int id) {
+
+        String sql = "DELETE FROM `anime_store`.`producer` WHERE (`id` = '%d')".formatted(id);
+        try (Connection conn = ConnectionFactory.getConnection()) {
+
+            Statement stmt = conn.createStatement();
+            int rowsAffected = stmt.executeUpdate(sql);
+            log.info("Deleted producer: {} from the database, Rows affected: {} ", id, rowsAffected);
             stmt.close();
 
         } catch (SQLException e) {
