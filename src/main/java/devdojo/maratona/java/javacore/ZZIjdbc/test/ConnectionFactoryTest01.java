@@ -7,8 +7,10 @@ public class ConnectionFactoryTest01 {
 
     public static void main(String[] args) {
 
-        Producer producer = Producer.builder().name("NHK").build();
+        Producer producer = Producer.builder().id(2).name("nhk").build();
 //        ProducerService.saveProducer(producer);
-        ProducerService.deleteProducer(1);
+//        ProducerService.deleteProducer(1);
+
+        ProducerService.updateProducer(producer);
     }
 }
