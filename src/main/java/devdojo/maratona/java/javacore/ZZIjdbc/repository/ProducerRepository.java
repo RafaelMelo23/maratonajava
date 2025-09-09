@@ -2,11 +2,13 @@ package devdojo.maratona.java.javacore.ZZIjdbc.repository;
 
 import devdojo.maratona.java.javacore.ZZIjdbc.conn.ConnectionFactory;
 import devdojo.maratona.java.javacore.ZZIjdbc.dominio.Producer;
+import lombok.extern.log4j.Log4j2;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+@Log4j2
 public class ProducerRepository {
 
     public static void save(Producer producer) {
@@ -16,7 +18,7 @@ public class ProducerRepository {
 
             Statement stmt = conn.createStatement();
             int rowsAffected = stmt.executeUpdate(sql);
-            System.out.println("Rows affected: " + rowsAffected);
+            log.info("Rows affected: " + rowsAffected);
             stmt.close();
 
         } catch (SQLException e) {
