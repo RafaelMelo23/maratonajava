@@ -11,6 +11,8 @@ public class ConnectionFactoryTest01 {
 //        ProducerService.saveProducer(producer);
 //        ProducerService.deleteProducer(1);
 
-        ProducerService.updateProducer(producer);
+//        ProducerService.updateProducer(producer);
+
+        System.out.println(ProducerService.findAllProducer());
     }
 }

@@ -3,6 +3,8 @@ package devdojo.maratona.java.javacore.ZZIjdbc.service;
 import devdojo.maratona.java.javacore.ZZIjdbc.dominio.Producer;
 import devdojo.maratona.java.javacore.ZZIjdbc.repository.ProducerRepository;
 
+import java.util.List;
+
 public class ProducerService {
 
     public static void saveProducer(Producer producer) {
@@ -19,6 +21,11 @@ public class ProducerService {
         requireValidId(producer.getId());
 
         ProducerRepository.update(producer);
+    }
+
+    public static List<Producer> findAllProducer() {
+
+        return ProducerRepository.findAll();
     }
 
     private static void requireValidId(Integer id) {
