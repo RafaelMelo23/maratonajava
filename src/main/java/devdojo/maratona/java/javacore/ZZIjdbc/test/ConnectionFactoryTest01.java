@@ -13,8 +13,10 @@ public class ConnectionFactoryTest01 {
 
 //        ProducerService.updateProducer(producer);
 
-        System.out.println(ProducerService.findAllProducer());
+//        System.out.println(ProducerService.findAllProducer());
 
 //        System.out.println(ProducerService.findByName("nhk"));
+
+        ProducerService.showProducerMetaData();
     }
 }
