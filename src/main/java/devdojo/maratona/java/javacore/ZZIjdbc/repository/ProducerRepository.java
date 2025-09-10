@@ -61,9 +61,14 @@ public class ProducerRepository {
 
     public static List<Producer> findAll() {
         log.info("Finding All Producers");
+        return findByName("");
+    }
+
+    public static List<Producer> findByName(String nameToSearch) {
+        log.info("Finding All Producers by name: {}", nameToSearch);
         List<Producer> producers = new ArrayList<>();
 
-        String sql = "SELECT id, name FROM `anime_store`.`producer`";
+        String sql = "SELECT * FROM anime_store.producer where name like '%%%s%%'".formatted(nameToSearch);
         try (Connection conn = ConnectionFactory.getConnection()) {
 
             Statement stmt = conn.createStatement();
@@ -84,4 +89,6 @@ public class ProducerRepository {
 
         return producers;
     }
+
+
 }
