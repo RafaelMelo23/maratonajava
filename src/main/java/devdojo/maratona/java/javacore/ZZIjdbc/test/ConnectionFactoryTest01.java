@@ -7,7 +7,7 @@ public class ConnectionFactoryTest01 {
 
     public static void main(String[] args) {
 
-        Producer producer = Producer.builder().id(2).name("nhk").build();
+//        Producer producer = Producer.builder().id(2).name("nhk").build();
 //        ProducerService.saveProducer(producer);
 //        ProducerService.deleteProducer(1);
 
@@ -19,6 +19,8 @@ public class ConnectionFactoryTest01 {
 
 //        ProducerService.showProducerMetaData();
 
-        ProducerService.showDriverMetadata();
+//        ProducerService.showDriverMetadata();
+
+        ProducerService.showTypeScrollWorking();
     }
 }
