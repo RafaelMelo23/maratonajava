@@ -176,5 +176,31 @@ public class ProducerRepository {
 
     }
 
+    public static List<Producer> findByNameAndUpdateToUpperCase(String nameToSearch) {
+        log.info("Finding All Producers by name: {}", nameToSearch);
+        List<Producer> producers = new ArrayList<>();
+
+        String sql = "SELECT * FROM anime_store.producer where name like '%%%s%%'".formatted(nameToSearch);
+        try (Connection conn = ConnectionFactory.getConnection()) {
+
+            Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            ResultSet rs = stmt.executeQuery(sql);
+            {
+                while (rs.next()) {
+                    rs.updateString("name", rs.getString("name").toUpperCase());
+                    rs.updateRow();
+                    var id = rs.getInt("id");
+                    var name = rs.getString("name");
+
+                    producers.add(Producer.builder().id(id).name(name).build());
+                }
+            }
+        } catch (SQLException e) {
+            log.error("Error while trying to fetch all Producers", e);
+        }
+
+        return producers;
+    }
+
 
 }

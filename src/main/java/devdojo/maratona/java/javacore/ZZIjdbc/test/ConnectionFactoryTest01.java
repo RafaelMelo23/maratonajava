@@ -21,6 +21,8 @@ public class ConnectionFactoryTest01 {
 
 //        ProducerService.showDriverMetadata();
 
-        ProducerService.showTypeScrollWorking();
+//        ProducerService.showTypeScrollWorking();
+
+        System.out.println(ProducerService.findByNameAndUpdateToUpperCase("nhk"));
     }
 }
