@@ -38,6 +38,11 @@ public class ProducerService {
         ProducerRepository.showProducerMetadata();
     }
 
+    public static void showDriverMetadata() {
+
+        ProducerRepository.showDriverMetadata();
+    }
+
     private static void requireValidId(Integer id) {
 
         if (id == null || id <= 0) {

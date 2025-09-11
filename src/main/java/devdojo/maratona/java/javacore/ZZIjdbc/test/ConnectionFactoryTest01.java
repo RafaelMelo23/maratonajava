@@ -17,6 +17,8 @@ public class ConnectionFactoryTest01 {
 
 //        System.out.println(ProducerService.findByName("nhk"));
 
-        ProducerService.showProducerMetaData();
+//        ProducerService.showProducerMetaData();
+
+        ProducerService.showDriverMetadata();
     }
 }
