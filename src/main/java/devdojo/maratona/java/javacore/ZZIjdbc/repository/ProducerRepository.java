@@ -202,5 +202,55 @@ public class ProducerRepository {
         return producers;
     }
 
+    public static List<Producer> findByNameAndInsertIfNotFound(String nameToSearch) {
+        log.info("Finding producers by name: {}", nameToSearch);
+        List<Producer> producers = new ArrayList<>();
+
+        String sql = "SELECT * FROM anime_store.producer where name like '%%%s%%'".formatted(nameToSearch);
+        try (Connection conn = ConnectionFactory.getConnection()) {
+
+            Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            ResultSet rs = stmt.executeQuery(sql);
+
+            if (rs.next()) return producers;
+
+            rs.moveToInsertRow();
+            rs.updateString("name", nameToSearch);
+            rs.insertRow();
+
+            boolean isAdded = producers.add(getProducer(rs));
+            log.info("Added producer to db: {}", isAdded);
+
+        } catch (SQLException e) {
+            log.error("Error while trying to fetch all Producers", e);
+        }
+
+        return producers;
+    }
+
+    public static void findByNameAndDelete(String nameToSearch) {
+        log.info("Finding producers with the name: {}", nameToSearch);
+
+        String sql = "SELECT * FROM anime_store.producer where name like '%%%s%%'".formatted(nameToSearch);
+        try (Connection conn = ConnectionFactory.getConnection()) {
+
+            Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            ResultSet rs = stmt.executeQuery(sql);
+
+            while (rs.next()) {
+                log.info("Deleting producer found with the name: {}", nameToSearch);
+                rs.deleteRow();
+            }
+        } catch (SQLException e) {
+            log.error("Error while trying to fetch all Producers", e);
+        }
+    }
+
+    private static Producer getProducer(ResultSet rs) throws SQLException {
+        rs.beforeFirst();
+        rs.next();
+        return Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build();
+    }
+
 
 }

@@ -53,6 +53,16 @@ public class ProducerService {
         return ProducerRepository.findByNameAndUpdateToUpperCase(name);
     }
 
+    public static List<Producer> findByNameAndInsertIfNotFound(String name) {
+
+        return ProducerRepository.findByNameAndInsertIfNotFound(name);
+    }
+
+    public static void findByNameAndDelete(String name) {
+
+        ProducerRepository.findByNameAndDelete(name);
+    }
+
     private static void requireValidId(Integer id) {
 
         if (id == null || id <= 0) {

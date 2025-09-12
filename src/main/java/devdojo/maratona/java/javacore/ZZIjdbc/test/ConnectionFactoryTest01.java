@@ -23,6 +23,10 @@ public class ConnectionFactoryTest01 {
 
 //        ProducerService.showTypeScrollWorking();
 
-        System.out.println(ProducerService.findByNameAndUpdateToUpperCase("nhk"));
+//        System.out.println(ProducerService.findByNameAndUpdateToUpperCase("nhk"));
+
+        System.out.println(ProducerService.findByNameAndInsertIfNotFound("roberto"));
+
+        ProducerService.findByNameAndDelete("nhk");
     }
 }
