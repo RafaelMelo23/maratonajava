@@ -7,7 +7,7 @@ public class ConnectionFactoryTest01 {
 
     public static void main(String[] args) {
 
-//        Producer producer = Producer.builder().id(2).name("nhk").build();
+        Producer producer = Producer.builder().id(4).name("NHK").build();
 //        ProducerService.saveProducer(producer);
 //        ProducerService.deleteProducer(1);
 
@@ -25,10 +25,12 @@ public class ConnectionFactoryTest01 {
 
 //        System.out.println(ProducerService.findByNameAndUpdateToUpperCase("nhk"));
 
-//        System.out.println(ProducerService.findByNameAndInsertIfNotFound("roberto"));
+//        System.out.println(ProducerService.findByNameAndInsertIfNotFound("nhk"));
 
 //        ProducerService.findByNameAndDelete("nhk");
 
-        System.out.println(ProducerService.findByNamePreparedStatement("roberto"));
+//        System.out.println(ProducerService.findByNamePreparedStatement("nhk"));
+
+          ProducerService.updatePreparedStatement(producer);
     }
 }

@@ -68,6 +68,11 @@ public class ProducerService {
         return ProducerRepository.findByNamePreparedStatement(name);
     }
 
+    public static void updatePreparedStatement(Producer producer) {
+
+        ProducerRepository.updatePreparedStatement(producer);
+    }
+
     private static void requireValidId(Integer id) {
 
         if (id == null || id <= 0) {
