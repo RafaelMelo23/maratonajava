@@ -31,6 +31,8 @@ public class ConnectionFactoryTest01 {
 
 //        System.out.println(ProducerService.findByNamePreparedStatement("nhk"));
 
-          ProducerService.updatePreparedStatement(producer);
+//          ProducerService.updatePreparedStatement(producer);
+
+        System.out.println(ProducerService.findByNameCallableStatement("nhk"));
     }
 }
