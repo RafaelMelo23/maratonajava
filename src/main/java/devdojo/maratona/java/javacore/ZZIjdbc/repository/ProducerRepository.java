@@ -59,7 +59,7 @@ public class ProducerRepository {
     public static void updatePreparedStatement(Producer producer) {
 
         try (Connection conn = ConnectionFactory.getConnection();
-            PreparedStatement pstmt = preparedStatementUpdate(conn, producer)) {
+             PreparedStatement pstmt = preparedStatementUpdate(conn, producer)) {
 
             int rowsAffected = pstmt.executeUpdate();
             log.info("Updated producer: {}, Rows affected: {} ", producer.getId(), rowsAffected);
@@ -116,14 +116,14 @@ public class ProducerRepository {
              PreparedStatement pstmt = createdPreparedStatement(conn, sql, nameToSearch);
              ResultSet rs = pstmt.executeQuery()) {
 
-             while (rs.next()) {
-                 Producer producer = Producer.builder()
-                         .id(rs.getInt("id"))
-                         .name(rs.getString("name"))
-                         .build();
+            while (rs.next()) {
+                Producer producer = Producer.builder()
+                        .id(rs.getInt("id"))
+                        .name(rs.getString("name"))
+                        .build();
 
-                 producers.add(producer);
-             }
+                producers.add(producer);
+            }
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -139,14 +139,14 @@ public class ProducerRepository {
              PreparedStatement pstmt = callableStatementFindByName(conn, nameToSearch);
              ResultSet rs = pstmt.executeQuery()) {
 
-             while (rs.next()) {
-                 Producer producer = Producer.builder()
-                         .id(rs.getInt("id"))
-                         .name(rs.getString("name"))
-                         .build();
+            while (rs.next()) {
+                Producer producer = Producer.builder()
+                        .id(rs.getInt("id"))
+                        .name(rs.getString("name"))
+                        .build();
 
-                 producers.add(producer);
-             }
+                producers.add(producer);
+            }
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -334,6 +334,39 @@ public class ProducerRepository {
         rs.beforeFirst();
         rs.next();
         return Producer.builder().id(rs.getInt("id")).name(rs.getString("name")).build();
+    }
+
+    public static void saveTransaction(List<Producer> producers) {
+
+        try (Connection conn = ConnectionFactory.getConnection()) {
+            conn.setAutoCommit(false);
+            preparedStatementSaveTransaction(conn, producers);
+
+            conn.commit();
+            conn.setAutoCommit(true);
+        } catch (SQLException e) {
+           log.error("Error while trying to save producers: {}", producers);
+        }
+    }
+
+    private static void preparedStatementSaveTransaction(Connection conn, List<Producer> producers) throws SQLException {
+        String sql = "INSERT INTO anime_store.producer (name) VALUES( ? )";
+        boolean shouldRollback = false;
+        for (Producer p : producers) {
+            try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+                log.info("Saving producer to db: {}", p.getName());
+                pstmt.setString(1, p.getName());
+                pstmt.execute();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                shouldRollback = true;
+            }
+        }
+
+        if (shouldRollback) {
+            log.warn("Rolling back transaction");
+            conn.rollback();
+        }
     }
 
 
