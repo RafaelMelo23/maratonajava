@@ -1,5 +1,6 @@
 package devdojo.maratona.java.javacore.ZZIjdbc.conn;
 
+import javax.sql.rowset.CachedRowSet;
 import javax.sql.rowset.JdbcRowSet;
 import javax.sql.rowset.RowSetProvider;
 import java.sql.Connection;
@@ -10,25 +11,20 @@ public class ConnectionFactory {
 
     // java.sql = Connection, Statement, ResultSet, DriverManager
 
-    public static Connection getConnection() {
-
-        Connection conn = null;
+    public static Connection getConnection() throws SQLException {
 
         String url = "jdbc:mysql://localhost:3306/anime_store";
         String username = "root";
         String password = "secret";
 
-        try {
-            Connection connection = DriverManager.getConnection(url, username, password);
+        Connection connection = DriverManager.getConnection(url, username, password);
 
-            System.out.println(connection);
-            return connection;
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        System.out.println(connection);
+        return connection;
+
     }
 
-    public static JdbcRowSet getJdbcRowSet() throws SQLException{
+    public static JdbcRowSet getJdbcRowSet() throws SQLException {
 
         String url = "jdbc:mysql://localhost:3306/anime_store";
         String username = "root";
@@ -39,5 +35,18 @@ public class ConnectionFactory {
         jdbcRowSet.setUsername(username);
         jdbcRowSet.setPassword(password);
         return jdbcRowSet;
+    }
+
+    public static CachedRowSet getCachedRowSet() throws SQLException {
+
+        String url = "jdbc:mysql://localhost:3306/anime_store";
+        String username = "root";
+        String password = "secret";
+
+        CachedRowSet cachedRowSet = RowSetProvider.newFactory().createCachedRowSet();
+        cachedRowSet.setUrl(url);
+        cachedRowSet.setUsername(username);
+        cachedRowSet.setPassword(password);
+        return cachedRowSet;
     }
 }

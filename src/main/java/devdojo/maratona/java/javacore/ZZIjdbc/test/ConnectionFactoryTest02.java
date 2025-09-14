@@ -9,10 +9,10 @@ public class ConnectionFactoryTest02 {
 
     public static void main(String[] args) {
 
-        Producer producer = Producer.builder().id(4).name("updatedUser").build();
-        ProducerServiceRowSet.updateByIdJdbcRowSet(producer);
+        Producer producer = Producer.builder().id(4).name("nhk").build();
+        ProducerServiceRowSet.updateCachedRowSet(producer);
 
-        List<Producer> producers = ProducerServiceRowSet.findByNameJdbcRowSet("");
-        System.out.println(producers);
+//        List<Producer> producers = ProducerServiceRowSet.findByNameJdbcRowSet("");
+//        System.out.println(producers);
     }
 }
