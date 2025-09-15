@@ -17,6 +17,7 @@ public class ProducerService {
 
             case 1 -> find();
             case 2 -> delete();
+            case 3 -> save();
 
             default -> throw new IllegalArgumentException("No such operation");
         }
@@ -43,6 +44,19 @@ public class ProducerService {
 
         if ("Y".equalsIgnoreCase(choice)) {
             ProducerRepository.delete(id);
+        }
+    }
+
+    private static void save() {
+
+        System.out.println("Type the name of the producer to save: ");
+        String name = SCANNER.nextLine();
+
+        System.out.println("Are you sure? Y/N");
+        String choice = SCANNER.nextLine();
+
+        if ("Y".equalsIgnoreCase(choice)) {
+            ProducerRepository.save(Producer.builder().name(name).build());
         }
     }
 }
