@@ -4,10 +4,7 @@ import devdojo.maratona.java.javacore.ZZJcrud.conn.ConnectionFactory;
 import devdojo.maratona.java.javacore.ZZJcrud.dominio.Producer;
 import lombok.extern.log4j.Log4j2;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,6 +39,26 @@ public class ProducerRepository {
         String sql = "SELECT * FROM anime_store.producer where name like ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, "%" + name + "%");
+        return pstmt;
+    }
+
+    public static void delete(int id) {
+
+        try (Connection conn = ConnectionFactory.getConnection();
+             PreparedStatement pstmt = createPreparedStatementDelete(conn, id)) {
+
+            pstmt.execute();
+            log.info("Deleted producer: {} from the database", id);
+
+        } catch (SQLException e) {
+            log.error("Error while deleting producer with id: {}", id, e);
+        }
+    }
+
+    private static PreparedStatement createPreparedStatementDelete(Connection conn, Integer id) throws SQLException {
+        String sql = "DELETE FROM `producer` WHERE `id` = ?";
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setInt(1, id);
         return pstmt;
     }
 

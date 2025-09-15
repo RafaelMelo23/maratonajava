@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class ProducerService {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void buildMenu(int op) {
 
@@ -16,6 +16,7 @@ public class ProducerService {
         switch (op) {
 
             case 1 -> find();
+            case 2 -> delete();
 
             default -> throw new IllegalArgumentException("No such operation");
         }
@@ -23,12 +24,25 @@ public class ProducerService {
 
     private static void find() {
         System.out.println("Enter producer name (or empty to obtain all): ");
-        String name = scanner.nextLine();
+        String name = SCANNER.nextLine();
 
         List<Producer> producers = ProducerRepository.findByNamePreparedStatement(name);
-        for (int i = 0; i < producers.size() ; i++) {
+        for (int i = 0; i < producers.size(); i++) {
 
-            System.out.printf("[%d] - %s%n", i, producers.get(i).getName());
+            Producer producer = producers.get(i);
+            System.out.printf("[%d] - ID: %d | %s%n", i, producer.getId(), producer.getName());
+        }
+    }
+
+    private static void delete() {
+
+        System.out.println("Type the ID of the producer to delete: ");
+        int id = Integer.parseInt(SCANNER.nextLine());
+        System.out.println("Are you sure? Y/N");
+        String choice = SCANNER.nextLine();
+
+        if ("Y".equalsIgnoreCase(choice)) {
+            ProducerRepository.delete(id);
         }
     }
 }
