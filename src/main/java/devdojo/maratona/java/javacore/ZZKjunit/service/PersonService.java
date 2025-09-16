@@ -2,7 +2,9 @@ package devdojo.maratona.java.javacore.ZZKjunit.service;
 
 import devdojo.maratona.java.javacore.ZZKjunit.dominio.Person;
 
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class PersonService {
 
@@ -10,5 +12,10 @@ public class PersonService {
         Objects.requireNonNull(person, "Person cant be null");
 
         return person.getAge() >= 18;
+    }
+
+    public List<Person> filterRemovingNotAdult(List<Person> personList) {
+
+        return personList.stream().filter(this::isAdult).collect(Collectors.toList());
     }
 }
